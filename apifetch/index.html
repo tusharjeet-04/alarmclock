@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Prototype-------------------------
+        // function Car(name,model){
+        //     this.name=name;
+        //     this.model=model;
+        // }
+        // Car.prototype.owner="Tushar";
+
+        // const carmodel=new Car("Toyota","Supra")
+        // console.log(carmodel);
+        //Proto----------------------------------------
+        function Car(name,model){
+            this.name=name;
+            this.model=model;
+        }
+        const carmodel=new Car("Toyota","Supra")
+        carmodel.__proto__.owner="Tushar";
+        console.log(carmodel.name,carmodel.model,carmodel.owner);
+    </script>
+</body>
+</html>
